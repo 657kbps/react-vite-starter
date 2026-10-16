@@ -11,6 +11,8 @@ minimumReleaseAgeExclude:
 overrides:
   '@babel/core': ^7.29.6
   '@humanfs/node': ^0.16.8
+  # GHSA-rj75-hqrm-r3gf: typography still pins the vulnerable 6.0.10 release.
+  '@tailwindcss/typography>postcss-selector-parser': ^7.1.6
   baseline-browser-mapping: ^2.11.0
   brace-expansion: ^5.0.8
   browserslist: ^4.28.7
@@ -18,4 +20,8 @@ overrides:
   launch-editor: ^2.14.1
   nanoid: ^3.3.18
   postcss: ^8.5.18
+  # GHSA-p6vx-979v-rg4c and GHSA-jp82-f5mq-hwhp: Solid pins seroval to ~1.5.0.
+  seroval: ^1.6.3
   shell-quote: ^1.9.0
+  # GHSA-68fv-2mgg-jv7q
+  source-map-js: ^1.2.2
